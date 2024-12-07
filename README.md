@@ -1,7 +1,3 @@
-
-
-https://github.com/user-attachments/assets/bcb14078-7288-4c07-96dc-5fb1d02e6bd0
-
 # Random Walk Web Development Assessment 
 
 ## Instructions:
@@ -81,3 +77,6 @@ Develop a web-based Tic Tac Toe game for two players that allows them to take tu
 3) Source code with comments explaining the logic and structure for future reference or modifications. Zip it
 
 **Push the code in HTML, CSS and JS, along with a demo video of your solution into the github repo.**
+
+https://github.com/user-attachments/assets/bcb14078-7288-4c07-96dc-5fb1d02e6bd0
+
