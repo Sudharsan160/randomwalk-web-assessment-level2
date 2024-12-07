@@ -2,30 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Serif&display=swap" rel="stylesheet">
+    <title>Unique Tic Tac Toe</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="title">
-        <h1>Tic Tac Toe</h1>
+
+<div class="container">
+    <h1 class="title"> Tic Tac Toe </h1>
+
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+        <div class="player-score">Player X: <span id="scoreX">0</span></div>
+        <div class="player-score">Player O: <span id="scoreO">0</span></div>
     </div>
-    <div id="board">
-        <div class="square" id="square0"></div>
-        <div class="square" id="square1"></div>
-        <div class="square" id="square2"></div>
-        <div class="square" id="square3"></div>
-        <div class="square" id="square4"></div>
-        <div class="square" id="square5"></div>
-        <div class="square" id="square6"></div>
-        <div class="square" id="square7"></div>
-        <div class="square" id="square8"></div>
-    </div>  
-    <div id="endGame">
-        <input type="button" value="Restart" id="restartButton" onclick="restartButton()"/>
+
+    <!-- Turn Indicator -->
+    <div id="turnIndicator" class="turn-indicator">Player X's Turn</div>
+
+    <!-- Game Board -->
+    <div id="gameBoard" class="game-board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
     </div>
-    <script src="game.js"></script>
+
+    <button id="resetButton" class="btn">Restart Game 🔄</button>
+
+    <div id="gameStatus" class="game-status"></div>
+</div>
+
+<script src="./script.js"></script>
 </body>
 </html>
